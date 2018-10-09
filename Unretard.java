@@ -8,10 +8,11 @@ public class Unretard extends JFrame implements ActionListener{
   private JPanel conv;
   private JLabel result;
   private JTextField resultatcv = new JTextField(50);
+  private Font poliss = new Font("Arial", Font.BOLD, 20);
   public Unretard(){
     super("Unretard");
     init();
-    this.setBounds(0, 0, 1500, 1000);
+    this.setBounds(0, 0, 1200, 300);
     this.setVisible(true);
   }
 
@@ -29,6 +30,7 @@ public class Unretard extends JFrame implements ActionListener{
     pano.add(Unretard.nombre);
     pano.add(envoi);
     this.resultatcv.setFocusable(false);
+    this.resultatcv.setFont(poliss);
     pano.add(this.resultatcv);
     return pano;
   }

@@ -62,7 +62,7 @@ public class Converter{
           convertion = convertion.divide(new BigDecimal(1000));
         }
         convertion = convertion.setScale(10,BigDecimal.ROUND_UP);
-        return (valeur + " = " + convertion.toString() + "x10^"+ puissance +"\t" +this.getNewUnit(key));
+        return (valeur + " = " + convertion.toString() + " x 10^"+ puissance +"\t" +this.getNewUnit(key));
       }
   }
 
